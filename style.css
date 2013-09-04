@@ -1,9 +1,9 @@
 /*
-Theme Name:		Pondasee
+Theme Name:	Pondasee
 Theme URI:  	
-Version: 		2.0
-Author: 		Satrya
-Author URI:		http://tokokoo.com
+Version: 2.0
+Author: Satrya
+Author URI:	http://tokokoo.com
 */
 /* 
    Table of Contents
@@ -25,7 +25,8 @@ Author URI:		http://tokokoo.com
 /* =============================================================================
 - Reset Stylesheet
 ============================================================================= */
-body {
+body,
+figure {
   margin: 0;
 }
 
@@ -600,33 +601,6 @@ object {
 /* =============================================================================
 - Main
 ============================================================================= */
-/*
- * Sample seperate main styles
- * See 'main' Folder
- */
-/*
- * Header style
- */
-.site-header {
-  display: block;
-}
-
-/*
- * Menu style
- */
-.main-navigation ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Footer style
- */
-.site-footer {
-  display: block;
-}
-
 /* =============================================================================
 - Utilities
 ============================================================================= */
@@ -653,6 +627,43 @@ object {
   visibility: hidden;
   width: 0;
   height: 0;
+}
+
+/*	Inline-Block
+	-------------------- */
+.iblock {
+  display: -moz-inline-stack;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  *display: inline;
+  vertical-align: top;
+  *zoom: 1;
+}
+
+/* 	Break text
+	-------------------- */
+.break {
+  word-break: break-all;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+/* 	Truncate text
+	-------------------- */
+.truncate {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+/* 	Hide text
+	-------------------- */
+.hide-text {
+  overflow: hidden;
+  text-align: left;
+  text-indent: -119988px;
 }
 
 /* 	IMAGE REPLACEMENT
@@ -782,7 +793,7 @@ hr.lightborder {
   border-color: white;
 }
 
-/* 	MISC CLASSES
+/* 	POSITIONING
 	----------------- */
 .first {
   margin-left: 0;
